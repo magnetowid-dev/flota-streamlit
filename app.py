@@ -8,9 +8,9 @@ from folium.plugins import Fullscreen
 from streamlit_folium import st_folium
 
 # --- KONFIGURACJA ---
-FOLDER_ROBOCZY = r"C:\FlotaApp"
+# w chmurze zapisujemy plik w katalogu roboczym aplikacji
 PLIK_BAZY = "flota_data.csv"
-DATA_FILE = os.path.join(FOLDER_ROBOCZY, PLIK_BAZY)
+DATA_FILE = os.path.join(os.getcwd(), PLIK_BAZY)
 
 AUTA = ["AYGO 28", "AYGO 29", "LUPO", "GOLF"]
 
@@ -343,3 +343,4 @@ with c_hist:
             )
     else:
         st.info("Brak zapisanych przejazdów.")
+
