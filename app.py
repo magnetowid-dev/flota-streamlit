@@ -53,7 +53,7 @@ def load_data():
         df.to_csv(DATA_FILE, index=False, encoding="utf-8-sig")
         return df
 
-    df = None    # spróbuj kilku kodowań
+    df = None
     for enc in ("utf-8", "cp1250", "latin1"):
         try:
             df = pd.read_csv(DATA_FILE, encoding=enc)
@@ -365,7 +365,7 @@ with c_form:
                 st.success("Wyjazd zapisany. Auto oznaczone jako 'W trasie'.")
                 st.session_state["action_type"] = "oddaj"
                 st.session_state["selected_auto"] = aut
-                st.experimental_rerun()
+                st.rerun()
             else:
                 if open_idx is None:
                     st.error("Brak otwartej trasy dla tego auta.")
@@ -392,7 +392,7 @@ with c_form:
                         save_df(df2)
                         st.success("Powrót zapisany. Trasa domknięta.")
                         st.session_state["action_type"] = "oddaj"
-                        st.experimental_rerun()
+                        st.rerun()
 
 with c_hist:
     st.subheader("📋 Historia")
