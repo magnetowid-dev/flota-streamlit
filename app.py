@@ -185,7 +185,7 @@ st.divider()
 
 # --- MAPA ---
 
-st.info("Auta w trasie są ukryte na mapie.")
+st.info("Auta w trasie są ukryte. Auta zaparkowane, znajdują się na mapie")
 center = [54.000567, 16.975717]
 
 vis = df[df["W_drodze"] == False]
@@ -442,3 +442,4 @@ with c_hist:
             )
     else:
         st.info("Brak zapisanych przejazdów.")
+
