@@ -1,0 +1,3 @@
+﻿Numer,Data,Auto,Kierowca,Cel,Trasa,Licznik_poczatek,Licznik_koniec,Przejechane_km,Strefa,Opis_miejsca,Lat,Lon,W_drodze
+2,2026-02-22,GOLF,Ziemek,Montaż komputerów - SP,Miastko -> Miastko,78000,78000,0,CIT,,54.000244,16.974717,False
+1,2026-02-22,GOLF,Ziemek,Montaż komputerów - SP,Miastko -> Miastko,78000,78000,0,W trasie,Wyjazd,0.0,0.0,True
